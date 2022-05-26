@@ -22,24 +22,24 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="logo-wrap">
-                    <a href=""><img src="./img/Logo_header.png" alt="Organick"></a>
+                    <a href="#Home"><img src="./img/Logo_header.png" alt="Organick"></a>
                 </div>
                 <nav>
                     <ul>
                         <li>
-                            <a class="header-section-active-link" href="">Home</a>
+                            <a class="header-section-link" href="#Home">Home</a>
                         </li>
                         <li>
-                            <a class="header-section-link" href="">About Us</a>
+                            <a class="header-section-link" href="#About Us">About Us</a>
                         </li>
                         <li>
-                            <a class="header-section-link" href="">Shop</a>
+                            <a class="header-section-link" href="#Shop">Shop</a>
                         </li>
                         <li>
-                            <a class="header-section-link" href="">Pages</a>
+                            <a class="header-section-link" href="#Pages">Pages</a>
                         </li>
                         <li>
-                            <a class="header-section-link" href="">Contact Us</a>
+                            <a class="header-section-link" href="#Contact Us">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +52,7 @@
 
     <main>
         <!-- welcome-section -->
-        <section class="welcome-section">
+        <section id="Home" class="welcome-section">
             <div class="container">
                 <div>
                     <h2>Made with nature</h2>
@@ -81,7 +81,7 @@
         </section>
 
         <!-- about-us-section -->
-        <section class="about-us-section">
+        <section id="About Us" class="about-us-section">
             <div class="container">
                 <div class="about-us-wrap">
                     <div class="about-us-section-image"></div>
@@ -294,7 +294,7 @@
         </section>
 
         <!-- offer-products-section -->
-        <section class="offer-products-section">
+        <section id="Shop" class="offer-products-section">
             <div class="container">
                 <div class="offer-products-section-wrap">
                     <div>
@@ -489,7 +489,7 @@
         </section>
 
         <!-- news-section -->
-        <section class="news-section">
+        <section id="Pages" class="news-section">
             <div class="container">
                 <h2>News</h2>
                 <div class="news-section-wrap">
@@ -548,32 +548,34 @@
     </main>
 
     <!-- footer-section -->
-    <footer class="footer-section">
+    <footer id="Contact Us" class="footer-section">
         <div class="container">
             <div class="footer-section-wrap">
                 <div class="footer-section-contacts">
                     <h4>Contact Us</h4>
-                    <div>
-                        <span>Email</span>
-                        <div class="footer-section-contacts-wrap-link">
-                            <a class="footer-section-contacts-link" href="mailto:needhelp@organick.com">needhelp@organick.com</a>                            
+                    <address>
+                        <div>
+                            <span>Email</span>
+                            <div class="footer-section-contacts-wrap-link">
+                                <a class="footer-section-contacts-link" href="mailto:needhelp@organick.com">needhelp@organick.com</a>                            
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <span>Phone</span>
-                        <div class="footer-section-contacts-wrap-link">
-                            <a class="footer-section-contacts-link" href="tel:123(1254)1452">123 (1254) 1452</a>                            
+                        <div>
+                            <span>Phone</span>
+                            <div class="footer-section-contacts-wrap-link">
+                                <a class="footer-section-contacts-link" href="tel:123(1254)1452">123 (1254) 1452</a>                            
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <span>Address</span>
-                        <div class="footer-section-contacts-wrap-link">
-                            <p class="footer-section-contacts-link">88 Road, Brooklyn Street, USA</p>                            
+                        <div>
+                            <span>Address</span>
+                            <div class="footer-section-contacts-wrap-link">
+                                <p class="footer-section-contacts-link">88 Road, Brooklyn Street, USA</p>                            
+                            </div>
                         </div>
-                    </div>
+                    </address>
                 </div>
                 <div class="footer-section-icons-wrap">
-                    <img src="./img/logo_footer.png" alt="organick">
+                    <a href="#Home"><img src="./img/logo_footer.png" alt="organick"></a>
                     <p>We are a popular and farming company aspiring to be a leader in the Organic food industry.</p>
                     <nav>
                         <ul>
@@ -616,7 +618,7 @@
                 </div>
             </div>
             <div class="footer-section-designer">
-                    <p>Copyright © Organick | Designed by <span>VictorFlow</span> - Powered by <span>Webflow</span></p>
+                    <p>Copyright © Organick | Designed by <span>VictorFlow</span> - Powered by <span>Olga Naboichenko</span></p>
             </div>
         </div>
     </footer>
@@ -631,6 +633,18 @@
     loop:true, 
     autoplay:true,
     margin: 20,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        1000:{
+            items:2,
+        },
+        1400:{
+            items:3,
+        }
+    }
   });
 });
 </script>

@@ -73,6 +73,11 @@ ul li a{
   margin: 41px 0px;
 }
 
+.logo-wrap a img:hover{
+  border-radius: 7px;
+  box-shadow: 1px 0px 12px 5px rgb(126 182 147 / 50%);
+}
+
 .header-section nav ul{
   display: flex;
   align-items: center;
@@ -93,13 +98,6 @@ ul li a{
   color: #274C5B;
   letter-spacing: 0.36px;
   margin-right: 43px;
-}
-
-.header-section-active-link{
-  color: #7EB693;
-  margin-right: 43px;
-  text-decoration: none;
-  letter-spacing: 0.36px;
 }
 
 nav li a:hover{
@@ -185,6 +183,10 @@ nav li a:hover{
   cursor: pointer;
   background: #7EB693;
   border: 1px solid #7EB693;
+}
+
+.welcome-section button img:hover{
+  filter: drop-shadow(1px 2px 6px orange);
 }
 
 .welcome-section button span{
@@ -377,6 +379,10 @@ nav li a:hover{
   border: 1px solid #7EB693;
 }
 
+.about-us-section button img:hover {
+  filter: drop-shadow(1px 2px 6px orange);
+}
+
 .about-us-section button span{
   padding-right: 30px;
 }
@@ -444,8 +450,8 @@ nav li a:hover{
   line-height: 27px;
   letter-spacing: 0.36px;
   color: #FFFFFF;
-  border: none;
   padding: 5px 21px;
+  border: 1px solid transparent;
 }
 
 .organic-section-wrap-article button:hover{
@@ -706,6 +712,10 @@ nav li a:hover{
   border: 1px solid #7EB693;
 }
 
+.offer-products-section button img:hover {
+  filter: drop-shadow(1px 2px 6px orange);
+}
+
 .offer-products-section-button span{
   padding-right: 22px;
 }
@@ -908,6 +918,10 @@ nav li a:hover{
   border: 1px solid #7EB693;
 }
 
+.news-section button img:hover {
+  filter: drop-shadow(1px 2px 6px orange);
+}
+
 .news-section-button span{
   padding-right: 32px;
 }
@@ -1080,6 +1094,10 @@ nav li a:hover{
   border: 1px solid #7EB693;
 }
 
+.form-section button img:hover {
+  filter: drop-shadow(1px 2px 6px orange);
+}
+
 .form-section button span{
   margin-right: 25px;
 } 
@@ -1221,6 +1239,11 @@ nav li a:hover{
   margin-left: 20px;
 }
 
+.footer-section-icons-wrap a img:hover{
+  border-radius: 7px;
+  box-shadow: 1px 0px 12px 5px rgb(126 182 147 / 50%);
+}
+
 .footer-section-designer p{
   font-family: 'Open Sans';
   font-style: normal;
@@ -1316,7 +1339,7 @@ nav li a:hover{
   }
 
   .news-section-wrap-article-KristinaCastle{
-    margin: 0 auto;
+    margin: 0 auto 130px;
   }
 
   .news-section-wrap-article-AlexLouis{
@@ -1383,6 +1406,14 @@ nav li a:hover{
 }
 
 @media (max-width:768px){
+  .header-wrap{
+    display: block;
+  }
+
+  .header-section nav ul {
+    margin: 20px 0px;
+}
+
   .welcome-section h1{
     font-size: 60px;
     line-height: 75px;
@@ -1452,10 +1483,343 @@ nav li a:hover{
   }
 }
 
-@media (max-width:575px){
+@media (max-width:675px){
   .welcome-section h1{
     font-size: 40px;
     line-height: 55px;
     width: 349px;
+  }
+
+  .welcome-section-button {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 11px 8px 10px 10px;
+  }
+
+  .welcome-section button span {
+      padding: 5px 8px 5px 10px;
+  }
+
+  .ad-section-natural h3 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 180px;
+  }
+
+  .ad-section-offer h3 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 157px;
+  }
+
+  .ad-section-natural {
+    width: 234px;
+  }
+
+  .ad-section-offer {
+    width: 234px;
+  }
+
+  .about-us-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+    width: 255px;
+  }
+  .about-us-section-text {
+    width: 275px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about-us-section-organic-foods {
+    display: block;
+  }
+
+  .about-us-section-quality-standarts {
+    display: block;
+  }
+
+  .about-us-section-text-description {
+    width: 250px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about-us-section-button {
+    font-size: 15px;
+    padding: 15px 7px 15px 15px;
+  }
+
+  .organic-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .organic-section-wrap-article img {
+    width: 300px;
+    margin-bottom: 0px;
+  }
+
+  .organic-section-wrap-article-price {
+    display: block;
+  }
+
+  .organic-section-wrap-article h4::after {
+    content: "";
+    width: 255px;
+  }
+
+  .organic-section h2 {
+    margin-left: 0px;
+  }
+
+  .organic-section h3 {
+    margin: 0px 0px 39px 0px;
+  }
+
+  .testimonial-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .testimonial-section p {
+    width: 275px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .testimonial-section {
+    background-position: center;
+  }
+
+  .offer-products-section-wrap {
+    display: block;
+  }
+
+  .offer-products-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+    width: 245px;
+  }
+
+  .offer-products-section-button {
+    font-size: 15px;
+    padding: 15px 10px 15px 15px;
+    margin: 25px 7px 15px 0px;
+  }
+
+  .eco-friendly-section-farm-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .eco-friendly-section-farm-section p {
+    width: 241px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .eco-friendly-section-farm-section-wrap {
+    right: 0px;
+    padding: 39px 0px 41px 13px;
+  }
+
+  .section-menu-gallery-fruit-juice {
+    width: 300px;
+    height: 450px;
+  }
+
+  .section-menu-gallery-organic-food {
+    width: 300px;
+    height: 450px;
+  }
+
+  .section-menu-gallery-nuts-cookies {
+    width: 300px;
+    height: 450px;
+  }
+
+  .section-menu-gallery button {
+    padding: 30px 50px 30px 50px;
+    top: 195px;
+  }
+
+  .section-menu-gallery-fruit-juice-button {
+    left: 35px;
+  }
+
+  .section-menu-gallery-organic-food-button {
+    left: 22px;
+  }
+
+  .section-menu-gallery-nuts-cookies-button {
+    left: 22px;
+  }
+
+  .news-section-wrap {
+    display: block;
+  }
+
+  .news-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .news-section-button {
+    font-size: 15px;
+    padding: 15px 9px 15px 15px;
+    margin-bottom: 15px;
+  }
+
+  .news-section-wrap-article-KristinaCastle {
+    width: 300px;
+    height: 355px;
+  }
+
+  .news-section-wrap-article h4 {
+    font-size: 20px;
+    line-height: 25px;
+    width: 200px;
+  }
+
+  .news-section-wrap-article p {
+    font-size: 16px;
+    line-height: 27px;
+    width: 254px;
+  }
+
+  .news-section-wrap-article {
+    padding: 37px 0px 27px 22px;
+    top: 80px;
+    left: 7px;
+    width: 265px;
+  }
+
+  .news-section-wrap-article-AlexLouis {
+    width: 300px;
+    height: 355px;
+  }
+
+  .form-section h3 {
+    font-size: 22px;
+    line-height: 35px;
+    width: 171px;
+  }
+
+  .form-section-wrap {
+      padding: 40px 20px 100px 20px;
+  }
+
+  .form-section input {
+    font-size: 11px;
+    width: 270px;
+    height: 45px;
+    padding: 10px 10px 13px 10px;
+  }
+
+  .form-section button {
+    font-size: 13px;
+    padding: 10px 10px 10px 13px;
+  }
+
+  .form-section button span {
+    margin-right: 10px;
+  }
+
+  .form-section label {
+    margin-right: -38px;
+  }
+
+  .footer-section-icons-wrap p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 250px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-section-icons-wrap {
+    border: none;
+    padding: 0px;
+  }
+
+  .footer-section-icons-wrap nav ul li {
+    margin-right: 5px;
+  }
+
+  .footer-section-contacts-link {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .footer-section-utilityPages a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .footer-section h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .footer-section-utilityPages {
+    margin-right: 18px;
+    margin-left: 14px;
+  }
+
+  .footer-section-contacts {
+    margin-right: 0px;
+  }
+
+  .footer-section-designer p {
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  .footer-section-designer p span {
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 300px;
+  }
+}
+
+@media (max-width:575px){
+  .welcome-section h1 {
+    font-size: 28px;
+    line-height: 40px;
+    width: 250px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 250px;
+  }
+
+  .organic-section-wrap-article {
+    height: 425px;
+    width: 295px;
+  }
+
+  .form-section label {
+    margin-right: -38px;
+  }
+}
+
+@media (max-width:475px){
+  .form-section input {
+    width: 250px;
+  }
+
+  .organic-section-wrap-article img {
+    width: 250px;
+  }
+}
+
+@media (max-width:375px){
+  .form-section input {
+    width: 170px;
   }
 }
